@@ -24,21 +24,26 @@
     
   </head>
   <body id="page-profile">
-    <%- include('./parts/page-header', { title: 'Meu Perfil'}) %> 
+
+    <%- include('parts/page-header', { title: 'Meu Perfil'}) %>
+
 
     <div class="container animate-up delay-2">
       <aside class="card">
-        <img src="<%= profile.avatar %>" alt="<%= profile.name %>">
-        <h2><%= profile.name %></h2>
+        <img src="<%= profile.avatar %> " alt="<%= profile.name %> ">
+        <h2><%= profile.name %> </h2>
         <p>
           O valor da sua hora é <br/>
-          <strong>R$ 75,00</strong>
+          <strong>R$ <%= profile["value-hour"].toFixed(2).replace(".", ",") %> </strong>
         </p>
         <button class="button green" form="form-profile" type="submit">Salvar dados</button>
       </aside>
       <main>
 
-        <form id="form-profile">
+        <form 
+          id="form-profile" 
+          method="post" 
+          action="/profile">
           <fieldset>
             <legend>Dados do perfil</legend>
             <div class="separator light"></div>
@@ -46,7 +51,11 @@
             <div class="input-group">
               <div class="input-wrapper">
                 <label for="name">Nome</label>
-                <input type="text" id="name" name="name" value="<%= profile.name %>" />
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  value="<%= profile.name %>" />
               </div>
 
               <div class="input-wrapper">
@@ -55,7 +64,7 @@
                 placeholder="https://"
                 type="url" 
                 id="avatar" 
-                name="avatar" 
+                name="avatar"
                 value="<%= profile.avatar %>" />
               </div>
             </div>
@@ -117,4 +126,3 @@
     <!-- end container -->
   </body>
 </html>
- 
