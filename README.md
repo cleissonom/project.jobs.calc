@@ -15,23 +15,23 @@
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
 </p>
 
-<hr>
-
 <p align="center">
   <img alt="dev.finances" src=".github/jobscalc.png" width="100%">
 </p>
+
+<hr>
 
 ## 🚀 Technologies
 
 This project was developed with the following technologies:
 
-- HTML
-- CSS
-- JavaScript
-- NodeJS
-- EJS
-- Express
-- SQLite
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [NodeJS](https://nodejs.org/en/)
+- [EJS](https://ejs.co)
+- [Express](https://expressjs.com)
+- [SQLite](https://www.sqlite.org/index.html)
 
 ## 💻 Project
 
